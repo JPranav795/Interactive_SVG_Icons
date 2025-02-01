@@ -1,36 +1,42 @@
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  background-color: #f7f7f7;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.icon-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.icon {
-  width: 100px;
-  height: 100px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.icon:hover {
-  transform: scale(1.1);
-}
-
-.icon:active {
-  transform: scale(0.9);
-}
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1) rotate(15deg); /* Scale up and rotate the icon */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Adds a glowing effect */
+  }
+  
+  .icon:active {
+    transform: scale(0.9); /* Shrink the icon when clicked */
+  }
+  
+  .icon.clicked {
+    filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.8)); /* Add a green glow when clicked */
+  }
+  
