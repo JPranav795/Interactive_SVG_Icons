@@ -7,6 +7,10 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #ad06f5;
+    background-image: url(https://i.pinimg.com/originals/42/4f/5c/424f5c8b9e60dc5751400bd29e733d79.gif);
+    background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
   }
   
   h1 {
