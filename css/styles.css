@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background-color: #f7f7f7;
+    background-color: #ad06f5;
   }
   
   h1 {
@@ -28,15 +28,15 @@ body {
   }
   
   .icon:hover {
-    transform: scale(1.1) rotate(15deg); /* Scale up and rotate the icon */
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)); /* Adds a glowing effect */
+    transform: scale(1.1) rotate(15deg); 
+    filter: drop-shadow(0 0 10px rgba(59, 247, 1, 0.5)); 
   }
   
   .icon:active {
-    transform: scale(0.9); /* Shrink the icon when clicked */
+    transform: scale(0.9); 
   }
   
   .icon.clicked {
-    filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.8)); /* Add a green glow when clicked */
+    filter: drop-shadow(0 0 20px rgba(0, 255, 0, 0.8));
   }
   
