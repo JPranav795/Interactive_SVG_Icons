@@ -1,4 +1,4 @@
-// JavaScript to log the ID of clicked icons
+
 const icons = document.querySelectorAll('.icon');
 
 icons.forEach(icon => {
